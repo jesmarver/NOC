@@ -9,17 +9,15 @@ Instalamos las dependecias
 npm i
 ```
 
-Iniciar en modo desarrollo
-```shell
-npm run dev
-```
+## dev
+1. Clonar el archivo env.template a .env
+2. Configurar las variables de entorno
 
-Construir proyecto
-```shell
-npm run build
 ```
+PORT=3000
 
-Iniciar en modo producción
-```shell
-npm start
+MAILER_EMAIL=
+MAILER_SECRET_KEY=
+
+PROD=false
 ```
