@@ -21,3 +21,6 @@ MAILER_SECRET_KEY=
 
 PROD=false
 ```
+
+3. Ejecutar el comando ```npm install``` para instalar las dependencias.
+4. Ejecutar el comando ```npm run dev``` para arrancar la aplicación.

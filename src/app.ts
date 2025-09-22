@@ -8,6 +8,6 @@ import { envs } from "./config/plugin/envs.plugin";
 })();
 
 function main() {
-    // Server.start();
-    console.log(envs);
+    Server.start();
+    // console.log(envs);
 }
