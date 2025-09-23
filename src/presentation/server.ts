@@ -49,16 +49,16 @@ export class Server {
         // console.log(logs);
         // const 
 
-        // CronService.createJob('*/5 * * * * *', () => {
-        //     const url = "https://www.google.com";
-        //     new CheckServiceMultiple(
-        //         [fsLogRepository,
-        //             mongoLogRepository,
-        //             postgresLogRepository,],
-        //         () => console.log(`${url} is ok`),
-        //         (error) => console.log(error),
-        //     ).execute(url);
-        // });
+        CronService.createJob('*/5 * * * * *', () => {
+            const url = "https://www.google.com";
+            new CheckServiceMultiple(
+                [fsLogRepository,
+                    mongoLogRepository,
+                    postgresLogRepository,],
+                () => console.log(`${url} is ok`),
+                (error) => console.log(error),
+            ).execute(url);
+        });
 
     }
 
