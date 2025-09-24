@@ -3,15 +3,15 @@ import { envs } from '../../config/plugin/envs.plugin';
 
 
 
-interface SendMailOptions {
+export interface SendMailOptions {
     to: string | string[];
     subject: string;
     htmlBody: string;
-    attachments: Attachment[];
+    attachments?: Attachment[];
 
 }
 
-interface Attachment {
+export interface Attachment {
     filename: string;
     path: string;
 }
